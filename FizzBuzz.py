@@ -2,7 +2,9 @@
 
 import unittest
 
-def fizzbuzz(x):
+def fizzbuzz():
+
+    x = int(input("Please enter a number. "))
 
     if x % 3 == 0 and x % 5 == 0:
         #print("FizzBuzz")
@@ -19,7 +21,9 @@ def fizzbuzz(x):
     else:
         print(x)
 
+fizzbuzz()
 
+"""
 class Test_Fizzbuzz(unittest.TestCase):
     def setUp(self):
         pass
@@ -38,3 +42,4 @@ class Test_Fizzbuzz(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+"""

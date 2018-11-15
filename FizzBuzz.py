@@ -2,28 +2,27 @@
 
 import unittest
 
-def fizzbuzz():
+def fizzbuzz(*args):
+    for x in args:
 
-    x = int(input("Please enter a number. "))
+        if x % 3 == 0 and x % 5 == 0:
+            #print("FizzBuzz")
+            return "FizzBuzz"
 
-    if x % 3 == 0 and x % 5 == 0:
-        #print("FizzBuzz")
-        return "FizzBuzz"
+        elif x % 3 == 0:
+            #print("Fizz")
+            return "Fizz"
 
-    elif x % 3 == 0:
-        #print("Fizz")
-        return "Fizz"
+        elif x % 5 == 0:
+            #print("Buzz")
+            return "Buzz"
 
-    elif x % 5 == 0:
-        #print("Buzz")
-        return "Buzz"
-
-    else:
-        print(x)
+        else:
+            print(x)
 
 fizzbuzz()
 
-"""
+
 class Test_Fizzbuzz(unittest.TestCase):
     def setUp(self):
         pass
@@ -42,4 +41,3 @@ class Test_Fizzbuzz(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-"""

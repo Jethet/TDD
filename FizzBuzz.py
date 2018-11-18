@@ -1,4 +1,3 @@
-# code should enable input of a range of values instead of one
 
 import unittest
 

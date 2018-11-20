@@ -17,10 +17,11 @@ import unittest
 
 def countRange(*args):
     mylist = [*args]
-    min_value = 'a'
-    max_value = 'b'
+    min_value = 0
+    max_value = 0
     for x in mylist:
-        print(mylist.count(x >= 'a' and x < 'b'))
+        if x >= y and x < z:
+            print(mylist.count(x))
 
 countRange()
 
@@ -29,7 +30,7 @@ class Test_countRange(unittest.TestCase):
         pass
 
     def test_countMin(self):
-        expected = (x >= 'a')
+        expected = x
         self.assertEqual(expected, mylist(x))
 
 if __name__ == '__main__':

@@ -15,23 +15,23 @@ alist.count(input)
 """
 import unittest
 
-def countRange(*args):
-    mylist = [*args]
-    min_value = 0
-    max_value = 0
-    for x in mylist:
-        if x >= y and x < z:
-            print(mylist.count(x))
+def countRange(x, y):
+    mylist = []
+    min_value = x
+    max_value = y
+    for num in mylist:
+        if num >= x and num < y:
+            print(mylist.count(num))
 
-countRange()
+countRange(2, 26)
 
 class Test_countRange(unittest.TestCase):
     def setUp(self):
         pass
 
     def test_countMin(self):
-        expected = x
-        self.assertEqual(expected, mylist(x))
+        expected = num
+        self.assertEqual(expected, mylist(num))
 
 if __name__ == '__main__':
     unittest.main()

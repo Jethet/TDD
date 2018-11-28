@@ -16,10 +16,12 @@ def countRange(mylist, min_val, max_val):
     list_values = []
     min_val = 0
     max_val = 0
+    count = 0
     for num in mylist:
         if num >= min_val and num < max_val:
             list_values.append(num)
-            return list_values.count(num)
+            count = list_values.count(num)
+            return count
 
 
 print(countRange([2, 14, 23, 3], 2, 26))

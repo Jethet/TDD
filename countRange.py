@@ -12,7 +12,7 @@ for both lists of integers and lists of floating point numbers.
 """
 #import unittest
 
-def countRange(mylist, x, y):
+def countRange(mylist, min_val, max_val):
     list_values = []
     min_val = 0
     max_val = 0
@@ -21,8 +21,8 @@ def countRange(mylist, x, y):
             list_values.append(num)
             return list_values.count(num)
 
-list1 = [23, 4, 15, 25, 49]
-print(countRange(list1, 2, 26))
+
+print(countRange([2, 14, 23, 3], 2, 26))
 
 """
 class Test_countRange(unittest.TestCase):

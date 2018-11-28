@@ -9,21 +9,20 @@ value and the maximum value. It will return an integer result greater than or eq
 minimum values and maximum values. Ensure that your program works correctly
 for both lists of integers and lists of floating point numbers.
 
-alist.count(input)
 """
 #import unittest
 
 def countRange(mylist, x, y):
     list_values = []
-    min_value = x
-    max_value = y
+    min_val = 0
+    max_val = 0
     for num in mylist:
-        if num >= x and num < y:
+        if num >= min_val and num < max_val:
             list_values.append(num)
             return list_values.count(num)
 
-mylist = [23, 4, 31, 98, 2]
-print(countRange(mylist, 2, 26))
+list1 = [23, 4, 15, 25, 49]
+print(countRange(list1, 2, 26))
 
 """
 class Test_countRange(unittest.TestCase):

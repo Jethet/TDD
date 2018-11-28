@@ -9,29 +9,31 @@ value and the maximum value. It will return an integer result greater than or eq
 minimum values and maximum values. Ensure that your program works correctly
 for both lists of integers and lists of floating point numbers.
 
-max()			returns the biggest value in a list
-min()			returns the smallest value in a list
 alist.count(input)
 """
-import unittest
+#import unittest
 
-def countRange(x, y):
-    mylist = []
+def countRange(mylist, x, y):
+    list_values = []
     min_value = x
     max_value = y
     for num in mylist:
         if num >= x and num < y:
-            print(mylist.count(num))
+            list_values.append(num)
+            return list_values.count(num)
 
-countRange(2, 26)
+mylist = [23, 4, 31, 98, 2]
+print(countRange(mylist, 2, 26))
 
+"""
 class Test_countRange(unittest.TestCase):
     def setUp(self):
         pass
 
     def test_countMin(self):
-        expected = num
+        expected = myList(num >= x and num< y)
         self.assertEqual(expected, mylist(num))
 
 if __name__ == '__main__':
     unittest.main()
+"""

@@ -26,7 +26,8 @@ def countRange(mylist, min_val, max_val):
 
 print(countRange([2, 14, 23, 3], 2, 26))
 
-"""
+
+
 class Test_countRange(unittest.TestCase):
     def setUp(self):
         pass
@@ -37,4 +38,3 @@ class Test_countRange(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-"""

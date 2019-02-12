@@ -14,15 +14,10 @@ lists of floating point numbers.
 
 def countRange(mylist, min_val, max_val):
     list_values = []
-    #min_val = 0
-    #max_val = 0
-    count = 0
     for num in mylist:
         if num >= min_val and num < max_val:
             list_values.append(num)
-            print(list_values)
-            #count = list_values.count(num)
-        #return count
+    return list_values
 
 
-#print(countRange([2, 14, 23, 3], 2, 26))
+print(countRange([1, 14, 23, 33], 2, 26))

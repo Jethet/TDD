@@ -10,6 +10,8 @@
 #  2. Execute code being tested, capturing the output
 #  3. Compare the output with the expected result
 
+# Use .assertRaises() to handle expected errors (such as type errors)
+
 import unittest
 from fractions import Fraction
 from my_sum import get_sum
@@ -23,9 +25,14 @@ class TestSum(unittest.TestCase):
 
     def test_list_fraction(self):
         # This tests if get_sum() can sum a list of fractions:
-        data = [Fraction(1,4), Fraction(1,4), Fraction(2,5)]
+        data = [Fraction(1,4), Fraction(1,4), Fraction(1,2)]
         result = sum(data)
         self.assertEqual(result, 1)
+
+    def test_bad_type(self):
+        data = 'banana'
+        with self.assertRaises(TypeError):
+            result = sum(data)
 
 if __name__ == '__main__':
     unittest.main()

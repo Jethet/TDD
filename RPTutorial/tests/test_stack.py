@@ -1,4 +1,9 @@
 from ds.stack import Stack
+import pytest
+
+@pytest.fixture
+def stack():
+    return Stack()
 
 def test_constructor():
     # Create object s from Stack class:
@@ -6,3 +11,7 @@ def test_constructor():
     assert isinstance(s, Stack)
     # Call len() will call def __len__(self)
     assert len(s) == 0
+
+def test_push(stack):
+    stack.push(3)
+    assert len(stack) == 1

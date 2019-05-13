@@ -1,7 +1,0 @@
-The directory ds stores the datastructure. The __init__.py creates a package
-inside the ds directory. In the stack.py the datastructure is implemented.
-
-The directory tests stores the tests.
-
-Using pytest, any file used for testing needs to have the prefix test_<name>.
-The name of a function to be tested needs to start with test_ as well.

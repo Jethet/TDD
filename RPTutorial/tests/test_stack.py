@@ -1,5 +1,8 @@
 from ds.stack import Stack
 
 def test_constructor():
+    # Create object s from Stack class:
     s = Stack()
-    assert 1 == 2
+    assert isinstance(s, Stack)
+    # Call len() will call def __len__(self)
+    assert len(s) == 0

@@ -9,6 +9,8 @@ The name of a function to be tested needs to start with test_ as well.
 Using _<value> means that the value is private (internal),
 see code stack.py: self._storage.
 
+
+
 The tutorial DOES NOT MENTION the pytest.ini file that you should have in the
 root directory. Not exactly sure which is the root directory here (is it GitHub,
 is it TDD, is it RPTutorial?). I have chosen to create pytest.ini in the TDD
